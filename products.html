@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукты FOHOW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="img\cropped-fohow-logo-1-scaled-1024x341.webp" alt="Логотип FOHOW" class="nav-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="products.html" class="active">Продукты</a></li>
+                <li><a href="faq.html">Вопрос-Ответ</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Каталог продукции FOHOW</h1>
+            <p>Полный ассортимент оздоровительной продукции</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="supplements">Health Supplements</button>
+                <button class="filter-btn" data-filter="skincare">Skin Care & Hygiene</button>
+                <button class="filter-btn" data-filter="equipment">Wellness Equipment</button>
+                <button class="filter-btn" data-filter="belts">Faradization Thermal Belts</button>
+                <button class="filter-btn" data-filter="massager">Massager</button>
+                <button class="filter-btn" data-filter="textile">Textile</button>
+            </div>
+
+            <div class="products-grid-large">
+                <!-- Товары с onclick для открытия модалки -->
+                
+                <div class="product-card-large" data-category="supplements" onclick="openModal(1)">
+                    <div class="product-image-large"><img src="img/1.webp" alt="Slim Power"></div>
+                    <div class="product-info">
+                        <h3>Slim Power</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽11,500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(2)">
+                    <div class="product-image-large"><img src="img/2.webp" alt="Active ProBio"></div>
+                    <div class="product-info">
+                        <h3>Active ProBio Probiotic Drink</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽8,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(3)">
+                    <div class="product-image-large"><img src="img/3.webp" alt="Fito-ChangQing"></div>
+                    <div class="product-info">
+                        <h3>Fito-ChangQing Plant Drink</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽7,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(4)">
+                    <div class="product-image-large"><img src="img/4.webp" alt="Gut Balance"></div>
+                    <div class="product-info">
+                        <h3>Gut & Metabolism Balance System</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽23,500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(5)">
+                    <div class="product-image-large"><img src="img/5.webp" alt="Linchzhi"></div>
+                    <div class="product-info">
+                        <h3>Capsules "Linchzhi"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽2,200</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(6)">
+                    <div class="product-image-large"><img src="img/6.webp" alt="Calcium Haicao Gai"></div>
+                    <div class="product-info">
+                        <h3>Calcium Capsules "Haicao Gai"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽3,300</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(7)">
+                    <div class="product-image-large"><img src="img/7.webp" alt="Gaoqian"></div>
+                    <div class="product-info">
+                        <h3>Nutritional Tablets "Gaoqian"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽4,950</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(8)">
+                    <div class="product-image-large"><img src="img/8.webp" alt="Meigui"></div>
+                    <div class="product-info">
+                        <h3>Prebiotic Paste "Meigui"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽1,650</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(9)">
+                    <div class="product-image-large"><img src="img/9.webp" alt="Phoenix"></div>
+                    <div class="product-info">
+                        <h3>Oral Liquid "Phoenix"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽3,300</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(10)">
+                    <div class="product-image-large"><img src="img/10.webp" alt="Sanbao"></div>
+                    <div class="product-info">
+                        <h3>Oral Liquid "Sanbao"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽4,400</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(11)">
+                    <div class="product-image-large"><img src="img/11.webp" alt="Sanqing"></div>
+                    <div class="product-info">
+                        <h3>Oral Liquid “Sanqing"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽4,400</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(12)">
+                    <div class="product-image-large"><img src="img/12.webp" alt="Phoenix Legend"></div>
+                    <div class="product-info">
+                        <h3>Oral Liquid “Phoenix Legend”</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽4,950</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(13)">
+                    <div class="product-image-large"><img src="img/13.webp" alt="Xueqinfu"></div>
+                    <div class="product-info">
+                        <h3>Capsules "Xueqinfu"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽6,600</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(14)">
+                    <div class="product-image-large"><img src="img/14.webp" alt="Movement Plus"></div>
+                    <div class="product-info">
+                        <h3>"Movement Plus" Peptide Capsules</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽11,500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(15)">
+                    <div class="product-image-large"><img src="img/15.webp" alt="Garlic Oil"></div>
+                    <div class="product-info">
+                        <h3>Garlic Essence Oil Capsule</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽1,650</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(16)">
+                    <div class="product-image-large"><img src="img/16.webp" alt="Liuwei Cha"></div>
+                    <div class="product-info">
+                        <h3>Puer Tea "Liuwei Cha"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽1,650</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(17)">
+                    <div class="product-image-large"><img src="img/17.webp" alt="Shun Ci"></div>
+                    <div class="product-info">
+                        <h3>Tea “Shun Ci”</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽2,450</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(18)">
+                    <div class="product-image-large"><img src="img/18.webp" alt="Gufei Bao"></div>
+                    <div class="product-info">
+                        <h3>Princess Pearls Capsules "Gufei Bao"</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽3,300</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="supplements" onclick="openModal(19)">
+                    <div class="product-image-large"><img src="img/19.webp" alt="Gufei Sample"></div>
+                    <div class="product-info">
+                        <h3>Princess Pearl Capsule "Gufei Bao" - 1 sample</h3>
+                        <p class="category-tag">Health Supplements</p>
+                        <span class="price">₽600</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(20)">
+                    <div class="product-image-large"><img src="img/20.webp" alt="Aloe Vera"></div>
+                    <div class="product-info">
+                        <h3>Aloe Vera Gel</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽1,320</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(21)">
+                    <div class="product-image-large"><img src="img/21.webp" alt="Toothpaste"></div>
+                    <div class="product-info">
+                        <h3>Toothpaste with cordyceps</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽800</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(22)">
+                    <div class="product-image-large"><img src="img/22.webp" alt="Eye Cream"></div>
+                    <div class="product-info">
+                        <h3>Eye Cream with Cordyceps Extract</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽5,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(23)">
+                    <div class="product-image-large"><img src="img/23.webp" alt="Eye Pads"></div>
+                    <div class="product-info">
+                        <h3>Eye Pads with Cordyceps Extract</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽5,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(24)">
+                    <div class="product-image-large"><img src="img/24.webp" alt="Peptide Serum Set"></div>
+                    <div class="product-info">
+                        <h3>Regenerating "Multi-Peptide Serum" complex set</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽16,500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(25)">
+                    <div class="product-image-large"><img src="img/25.webp" alt="Lifting Complex"></div>
+                    <div class="product-info">
+                        <h3>Polypeptides Lifting Complex - Skincare Set</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽21,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(26)">
+                    <div class="product-image-large"><img src="img/26.webp" alt="Mineral Serum"></div>
+                    <div class="product-info">
+                        <h3>Mineral Recovery Serum</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽17,600</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(27)">
+                    <div class="product-image-large"><img src="img/27.webp" alt="Massage Cream"></div>
+                    <div class="product-info">
+                        <h3>Massage Cream</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽800</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(28)">
+                    <div class="product-image-large"><img src="img/28.webp" alt="Ultrasound Gel"></div>
+                    <div class="product-info">
+                        <h3>Ultrasound Gel</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽1,300</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(29)">
+                    <div class="product-image-large"><img src="img/29.webp" alt="Meridian Energy"></div>
+                    <div class="product-info">
+                        <h3>Meridian Energy cream</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽4,400</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="skincare" onclick="openModal(30)">
+                    <div class="product-image-large"><img src="img/30.webp" alt="Herbal Massage Oil"></div>
+                    <div class="product-info">
+                        <h3>Herbal Massage Oil 200ml</h3>
+                        <p class="category-tag">Skin Care & Hygiene</p>
+                        <span class="price">₽6,500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="massager" onclick="openModal(31)">
+                    <div class="product-image-large"><img src="img/31.webp" alt="Massager Gloves"></div>
+                    <div class="product-info">
+                        <h3>Massager Gloves</h3>
+                        <p class="category-tag">Massager</p>
+                        <span class="price">₽600</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(32)">
+                    <div class="product-image-large"><img src="img/32.webp" alt="Ancient Medicine Book"></div>
+                    <div class="product-info">
+                        <h3>Recent achievements of Ancient Medicine</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(33)">
+                    <div class="product-image-large"><img src="img/33.webp" alt="BEM Booklet"></div>
+                    <div class="product-info">
+                        <h3>BIO ENERGY MASSAGER Questions and Answers</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽500</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(34)">
+                    <div class="product-image-large"><img src="img/34.webp" alt="REM Device"></div>
+                    <div class="product-info">
+                        <h3>Energy Revitalising Device REM</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽199,800</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(35)">
+                    <div class="product-image-large"><img src="img/35.webp" alt="Sauna TIM"></div>
+                    <div class="product-info">
+                        <h3>Thermo infrared Sauna Capsule TIM</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽199,800</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(36)">
+                    <div class="product-image-large"><img src="img/36.png" alt="BEM 3.0"></div>
+                    <div class="product-info">
+                        <h3>Bioenergetic Meridian Massager BEM 3.0</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽199,800</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(37)">
+                    <div class="product-image-large"><img src="img/37.webp" alt="BEM Accessories"></div>
+                    <div class="product-info">
+                        <h3>BEM Massager Accesories</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽1,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="massager" onclick="openModal(38)">
+                    <div class="product-image-large"><img src="img/38.webp" alt="Ionic Face Massager"></div>
+                    <div class="product-info">
+                        <h3>Ionic Face Massager</h3>
+                        <p class="category-tag">Massager</p>
+                        <span class="price">₽15,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="massager" onclick="openModal(39)">
+                    <div class="product-image-large"><img src="img/39.webp" alt="Photon Lifting"></div>
+                    <div class="product-info">
+                        <h3>FOHOW Photon Lifting Device</h3>
+                        <p class="category-tag">Massager</p>
+                        <span class="price">₽30,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="belts" onclick="openModal(40)">
+                    <div class="product-image-large"><img src="img/40.webp" alt="Neck Belt"></div>
+                    <div class="product-info">
+                        <h3>Faradization Thermal Neck Belt</h3>
+                        <p class="category-tag">Faradization Thermal Belts</p>
+                        <span class="price">₽9,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="belts" onclick="openModal(41)">
+                    <div class="product-image-large"><img src="img/41.webp" alt="Knee Belt"></div>
+                    <div class="product-info">
+                        <h3>Faradization Thermal knee belt</h3>
+                        <p class="category-tag">Faradization Thermal Belts</p>
+                        <span class="price">₽15,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="belts" onclick="openModal(42)">
+                    <div class="product-image-large"><img src="img/42.webp" alt="Waist Belt"></div>
+                    <div class="product-info">
+                        <h3>Faradization Thermal Waist Belt</h3>
+                        <p class="category-tag">Faradization Thermal Belts</p>
+                        <span class="price">₽15,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="equipment" onclick="openModal(43)">
+                    <div class="product-image-large"><img src="img/43.webp" alt="H2 Bottle"></div>
+                    <div class="product-info">
+                        <h3>YANG SHENG H2 Hydrogen Water Bottle</h3>
+                        <p class="category-tag">Wellness Equipment</p>
+                        <span class="price">₽30,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="textile" onclick="openModal(44)">
+                    <div class="product-image-large"><img src="img/44.webp" alt="Latex Pillow"></div>
+                    <div class="product-info">
+                        <h3>Natural Latex Pillow</h3>
+                        <p class="category-tag">Textile</p>
+                        <span class="price">₽10,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="textile" onclick="openModal(45)">
+                    <div class="product-image-large"><img src="img/45.webp" alt="Bedding Set"></div>
+                    <div class="product-info">
+                        <h3>Functional Bedding Set</h3>
+                        <p class="category-tag">Textile</p>
+                        <span class="price">₽80,000</span>
+                    </div>
+                </div>
+
+                <div class="product-card-large" data-category="textile" onclick="openModal(46)">
+                    <div class="product-image-large"><img src="img/46.webp" alt="Functional Duvet"></div>
+                    <div class="product-info">
+                        <h3>Functional Duvet</h3>
+                        <p class="category-tag">Textile</p>
+                        <span class="price">₽40,000</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- МОДАЛЬНОЕ ОКНО (Скрыто по умолчанию) -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="">
+                </div>
+                <div class="modal-text">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <div class="modal-desc">
+                        <h4>Описание:</h4>
+                        <p id="modalDesc"></p>
+                    </div>
+                    <div class="modal-usage">
+                        <h4>Способ применения:</h4>
+                        <p id="modalUsage"></p>
+                    </div>
+                    <a href="contacts.html" class="btn-primary modal-btn">Заказать сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FOHOW Россия</h3>
+                    <p>Официальный дистрибьютор</p>
+                    <p>ОФИЦИАЛЬНЫЙ ПРОДУКТ FOHOW В РОССИИ<br>В МОСКВЕ ТАКОГО БОЛЬШЕ НЕТ!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-phone"></i> +7 916 711 18 09</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Рязанский проспект, 75к4</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://t.me/hGFAxKBaIN3liYTYy"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FOHOW Russia. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
